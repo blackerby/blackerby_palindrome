@@ -2,7 +2,16 @@
 
 require_relative "blackerby_palindrome/version"
 
-module BlackerbyPalindrome
-  class Error < StandardError; end
-  # Your code goes here...
+class String
+
+  def palindrome?
+    processed_content == processed_content.reverse
+  end
+
+  private
+
+    # Returns content for palindrome testing
+    def processed_content
+      scan(/[a-z]/i).join.downcase
+    end
 end
