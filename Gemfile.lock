@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    blackerby_palindrome (0.2.0)
+    blackerby_palindrome (0.2.1)
 
 GEM
   remote: https://rubygems.org/
