@@ -27,4 +27,24 @@ class BlackerbyPalindromeTest < Minitest::Test
   def test_integer_palindrome
     assert 12321.palindrome?
   end
+
+  def test_empty_string_not_palindrome
+    refute "".palindrome?
+  end
+
+  def test_spaces_not_palindrome
+    refute "     ".palindrome?
+  end
+
+  def test_tabs_not_palindrome
+    refute "\t\t\t".palindrome?
+  end
+
+  def test_newlines_not_palindrome
+    refute "\n\n\n".palindrome?
+  end
+
+  def test_mixed_whitespace_not_palindrome
+    refute "  \t   \n\t  ".palindrome?
+  end
 end

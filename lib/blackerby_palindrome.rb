@@ -5,7 +5,7 @@ require_relative "blackerby_palindrome/version"
 module BlackerbyPalindrome
 
   def palindrome?
-    processed_content == processed_content.reverse
+    processed_content == processed_content.reverse if !processed_content.empty?
   end
 
   private
